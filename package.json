@@ -1,0 +1,24 @@
+{
+  "name": "COS-Vintage",
+  "theme": "syntax",
+  "version": "0.1",
+  "private": false,
+  "description": "Syntax theme for Atom Studio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UGroup/COS-Vintage-Theme"
+  }
+  "licenses": [
+    
+  ],
+  "engines": {
+    "atom": ">0.39.0"
+  },
+  "readme": "## COS-Vintage Syntax Theme\n\nCOS-Vintage is a light syntax theme for [Atom](http://atom.io/) inspired by [Macrabbit Espresso](http://macrabbit.com/espresso/)'s default syntax highlighting color scheme, and by the [Soda Theme](https://github.com/buymeasoda/soda-theme) for Sublime. It features bright, primary colors on a white background. It is a syntax theme only, and will not affect the Atom UI.\n\n### Installation\n\nRun the following command:\n\n```sh\napm install cos-vintage\n```\n\nThen go to `Atom > Preferences > Themes` and in the `Syntax Themes` dropdown, select `COS-Vintage` from the list.\n\n\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/UGroup/COS-Vintage-Theme/issues"
+  },
+  "homepage": "",
+  "_id": ""
+}
