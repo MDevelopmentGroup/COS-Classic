@@ -22,7 +22,7 @@
   .gutter .line-number:after,
   .fold-marker:after { color: @gutter_text; }
 
-  .cursor { border-color: @cursor; }
+  .cursor { border-color: @cursor;}
 
   .selection .region {
     background-color: @black;
@@ -34,13 +34,13 @@
 }
 
 .bracket-matcher {
-  background-color: @green;
+  background-color: #DDCCBB;
 }
 
 .comment {
   color: @comment; }
 
-.entity { color: @red; }
+.entity { color: @black; }
 
 .keyword { color: @green; }
 
@@ -55,7 +55,7 @@
 
 .variable { color: @blue; }
 
-.delimiter, .brace { color: @black; }
+.delimiter, .brace { color: @black;}
 
 .delimiter.period { color: @green; }
 
@@ -78,30 +78,25 @@
 
 }
 
-// COS
+// Cache ObjectScript
 
-.coscls,
-.cosint,.cosmac, .cosint, .cosdfi,
-.cls, .int, .mac, .dfi {
+ .cos {
 
-    .Name {
-      color: @black;}
+    .name {
+      color: @dark_blue;}
 
-  .Comment { color: @comment; }
-
-  .Documentation_comment { color: @blue}
-
-  .Parameter { color: @parameter}
-
-  .Delimiter {color : @black}
-
-  .quoted { color: @red;
+  .quoted { color: @greenrgb;}
 
     .punctuation { color: @dark_blue; }
+
+    .variable { color: #808000!important;}
+
+    .patterns.include.method-definition.patterns.include.cosmethod-definition.comment { color: @green;}
   }
-
-
-}
+   .constant {color: @black;
+     &.numeric,
+     &.boolean { color: @black; }
+   }
 
 // CSS
 
@@ -109,7 +104,7 @@
 
   .entity { color: @blue; }
 
-  .property-name { color: @red; }
+  .property-name { color: @red!important; }
 
   .variable { color: @green; }
 
@@ -137,7 +132,7 @@
 
   }
 
-  .comment { color: @comment; }
+  .comment { color: @green; }
 
   .attribute-name { color: @black; }
 
