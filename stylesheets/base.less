@@ -6,7 +6,7 @@
 
 .editor-colors {
   background-color: @white;
-  color: @gray_dark; }
+  color: @black; }
 
 .editor {
   font-family: 'Courier New', Inconsolata, Monaco, Consolas, 'Espresso Mono', Courier, monospace;
@@ -85,18 +85,28 @@
     .name {
       color: @dark_blue;}
 
-  .quoted { color: @greenrgb;}
+  .string.quoted.double.source.isc.cos { color: @greenrgb;}
 
     .punctuation { color: @dark_blue; }
 
-    .variable { color: #808000!important;}
+  //  .variable { color: #808000!important;}
 
-    .patterns.include.method-definition.patterns.include.cosmethod-definition.comment { color: @green;}
-  }
    .constant {color: @black;
      &.numeric,
      &.boolean { color: @black; }
    }
+   .comment.line.source.isc.cos { color:@comment;}
+   //color of command and macro
+   .keyword.operator.source.isc.cos,
+   .keyword.other.source.isc.cos  {color: @bright_blue;}
+   //color of classname and !! function
+   .entity.name.function.source.isc.cos { color: @dark_blue;}
+
+   .support.function.source.isc.cos {color: @bright_blue;}
+   .variable.language.source.isc.cos { color: #808000; }
+   .variable.other.source.isc.cos {color: @dark_blue;}
+  }
+
 
 // CSS
 
