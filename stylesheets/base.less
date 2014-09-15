@@ -96,6 +96,9 @@
      &.boolean { color: @black; }
    }
    .comment.line.source.isc.cos { color:@comment;}
+
+   .comment.block.source.isc.cos {color: @greenrgb;}
+
    //color of command and macro
    .keyword.operator.source.isc.cos,
    .keyword.other.source.isc.cos  {color: @bright_blue;}
@@ -103,9 +106,10 @@
    .entity.name.function.source.isc.cos { color: @dark_blue;}
 
    .support.function.source.isc.cos {color: @bright_blue;}
-   .variable.language.source.isc.cos { color: #808000; }
+   .variable.language.source.isc.cos { color: #808000;}
    .variable.other.source.isc.cos {color: @dark_blue;}
-  }
+   .support.class.source.isc.cos {color: @bright_blue;}
+ }
 
 
 // CSS
@@ -128,32 +132,35 @@
 
 }
 
-// HTML
-.html,
+//block HTML
+ .html {
+   .punctuation.definition.tag.html {color: @black;}
+   .entity.name.tag.structure.any.html,.entity.name.tag.inline.any.html,
+   .entity.name.tag.block.any.html {color: @red;}
+   .entity.other.attribute-name.html {color: @dark_blue;}
+   .comment.block.html {color: @greenrgb;}
+   .punctuation.definition.comment.html {color: @black;}
+   //.punctuation.definition.string.begin.html, .string.quoted.double.html {color:#800080;}
+   .quoted { color: #800080;
+      .punctuation {color: #800080;}
+   }
+ }
+
+
 .xml{
 
-  .tag { color: @blue; }
-
+  .tag { color: @red; }
   .entity { color: @blue_tag;
-
     &.name {
       background-color: @blue;
       border-radius: 3px; }
-
   }
-
   .comment { color: @green; }
-
   .attribute-name { color: @black; }
-
   .quoted { color: @red;
-
     .punctuation { color: @dark_blue; }
-
   }
-
   .js .quoted { color: @orange; }
-
 }
 
 // Markdown
